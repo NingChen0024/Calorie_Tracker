@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingTop="60dp"
+    android:paddingRight="24dp">
+
+    <ImageView android:src="@drawable/fitness"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/welcomeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30sp"/>
+
+    <TextClock
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/calorieGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Calorie Goal" />
+
+        <Button
+            android:id="@+id/goalBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Goal" />
+
+
+</LinearLayout>

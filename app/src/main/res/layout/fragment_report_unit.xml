@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:paddingTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingTop="56dp"
+            android:paddingRight="24dp">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="290sp"
+                android:layout_height="290sp">
+            </com.github.mikephil.charting.charts.PieChart>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="Select Date"
+                    android:textSize="20dp"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/checkPie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+
+
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="290sp"
+                android:layout_height="290sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/dateStart"
+                        android:layout_width="170sp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="Start Date"
+                        android:textSize="20dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/dateEnd"
+                        android:layout_width="170sp"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:text="End Date"
+                        android:textSize="20dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/checkBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
